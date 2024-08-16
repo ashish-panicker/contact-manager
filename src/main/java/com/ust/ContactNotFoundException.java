@@ -6,7 +6,4 @@ public class ContactNotFoundException extends Exception {
         super(message);
     }
 
-    public ContactNotFoundException(String message, Throwable cause) {
-        super(message, cause);
-    }
 }

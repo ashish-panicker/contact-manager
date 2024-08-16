@@ -7,21 +7,11 @@
     <groupId>com.ust</groupId>
     <artifactId>contact_manager</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-<!--
-mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
--Dsonar.projectKey=easyskillup_contact-manager
--->
-
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit-version>5.7.2</junit-version>
-        <sonar.organization>easyskillup</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>easyskillup_contact-manager</sonar.projectKey>
-        <sonar.login>184d99379f91178db54be32482eef97f2a1998df</sonar.login>
     </properties>
     <dependencies>
         <dependency>
