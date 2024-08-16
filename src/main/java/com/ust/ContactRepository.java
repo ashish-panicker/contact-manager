@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class ContactRepository {
 
-    private List<Contact> contacts = new LinkedList();
+    private List<Contact> contacts = new LinkedList<>();
 
     public long generateId() {
         long id = contacts.stream().map(Contact::getId).max(Long::compare).orElse(0L);

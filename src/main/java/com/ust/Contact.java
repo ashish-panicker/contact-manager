@@ -14,7 +14,7 @@ import java.util.Set;
 public class Contact {
     private long id;
     private String name = "";
-    private Set<String> phoneNumbers = new HashSet();
+    private Set<String> phoneNumbers = new HashSet<>();
 
     public Contact(long id, String name,
                    String phoneNumber) {
