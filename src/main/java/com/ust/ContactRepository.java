@@ -27,11 +27,11 @@ public class ContactRepository {
         return contact;
     }
 
-    public Contact findById(String id) throws ContactNotFoundException {
+    public Contact findById(long id) throws ContactNotFoundException {
         return contacts.stream()
-                .filter(c -> c.getId() == Long.parseLong(id))
+                .filter(c -> c.getId() == id)
                 .findFirst()
-                .orElseThrow(() -> new ContactNotFoundException("Contact not found"));
+                .orElseThrow(() -> new ContactNotFoundException("Contact with id " + id + " not found"));
     }
 
     public Contact findByPhoneNumber(String phoneNumber) throws ContactNotFoundException {
